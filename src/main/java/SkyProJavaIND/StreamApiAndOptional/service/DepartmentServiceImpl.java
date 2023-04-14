@@ -39,6 +39,5 @@ public class DepartmentServiceImpl implements DepartmentService {
     @Override
     public Employee findAll() {
         return null;
-
     }
 }

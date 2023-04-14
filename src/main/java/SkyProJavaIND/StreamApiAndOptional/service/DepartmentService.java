@@ -11,3 +11,4 @@ public interface DepartmentService {
     List<Employee> allEmployeesByDepartment(int department);
     Employee findAll();
 }
+

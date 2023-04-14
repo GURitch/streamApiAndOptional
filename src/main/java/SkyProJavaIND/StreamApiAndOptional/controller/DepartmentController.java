@@ -33,5 +33,4 @@ public class DepartmentController {
     public List<Employee> allEmployeesByDepartment(@RequestParam("department") int department) {
         return departmentService.allEmployeesByDepartment(department);
     }
-
 }
