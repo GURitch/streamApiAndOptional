@@ -2,9 +2,12 @@ package SkyProJavaIND.StreamApiAndOptional.service;
 
 import SkyProJavaIND.StreamApiAndOptional.model.Employee;
 
+import java.util.List;
+import java.util.Optional;
+
 public interface DepartmentService {
-    public Employee findEmployeeMinSalaryByDepartment(int department);
-    public Employee findEmployeeMaxSalaryByDepartment(int department);
-    public Employee AllEmployeesByDepartment(int department);
-    public Employee findAll();
+    Optional<Employee> findEmployeeMinSalaryByDepartment(int department);
+    Optional<Employee> findEmployeeMaxSalaryByDepartment(int department);
+    List<Employee> allEmployeesByDepartment(int department);
+    Employee findAll();
 }

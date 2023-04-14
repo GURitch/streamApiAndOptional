@@ -28,6 +28,7 @@ public class EmployeeController {
         return "HELLO";
     }
 
+//    http://localhost:8080/employee/add?firstName=Ivan1&lastName=Ivanov1&salary=10000&department=1
     @GetMapping("/add")
     public Employee addEmployee(@RequestParam("firstName") String firstName,
                                 @RequestParam("lastName") String lastName,
