@@ -62,8 +62,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     private void validateInput(String firsName, String lastName) {
-        if(!isAlpha(firsName)&&isAlpha(lastName)){
-            throw new InvalidInputException();
+        if(!(isAlpha(firsName)&&isAlpha(lastName))){
+            throw new InvalidInputException("incorrect name or surname");
         }
     }
 }
